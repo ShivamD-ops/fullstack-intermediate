@@ -1,0 +1,23 @@
+.dashboard-panel {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #fafafa;
+  transition: background-color 0.3s ease;
+}
+.alert-warning {
+  background-color: #fff3cd; /* light yellow */
+  border-color: #ffeeba;
+}
+.welcome-message {
+  background-color: #d1e7dd; /* light green */
+  border-color: #badbcc;
+}
+.data-panel {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #e9ecef;
+  border-radius: 4px;
+  font-style: italic;
+  color: #495057;
+}

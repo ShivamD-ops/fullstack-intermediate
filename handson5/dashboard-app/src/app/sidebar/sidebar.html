@@ -1,0 +1,12 @@
+<div>
+  <h3>Sidebar</h3>
+  <label for="messageInput">Enter new dashboard message:</label><br />
+  <input
+    id="messageInput"
+    type="text"
+    [(ngModel)]="newMessage"
+    placeholder="Type a message"
+    aria-label="New message input"
+  />
+  <button (click)="updateSharedMessage()">Update Message</button>
+</div>

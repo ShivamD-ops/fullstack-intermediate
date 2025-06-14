@@ -1,0 +1,15 @@
+<div
+  class="dashboard-panel"
+  [ngClass]="{
+'alert-warning': currentMessage.toLowerCase().includes('alert'),
+'welcome-message': currentMessage.toLowerCase().includes('welcome')
+}"
+>
+  <h2>Dashboard</h2>
+  <p>Latest Message:</p>
+  <blockquote>{{ currentMessage }}</blockquote>
+  <!-- Placeholder for future dynamic panels or charts -->
+  <div class="data-panel">
+    <p>This panel can update dynamically based on the shared message.</p>
+  </div>
+</div>
