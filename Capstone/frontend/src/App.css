@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5; /* Light grey background */
+}
+/* App container */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/* Header styles */
+.app-header {
+  width: 100%;
+  background-color: #4f46e5; /* Indigo 700 */
+  color: white;
+  padding: 24px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 32px;
+}
+.app-title {
+  font-size: 2.25rem; /* 4xl */
+  font-weight: 800; /* Extrabold */
+  text-align: center;
+  letter-spacing: -0.025em; /* Tracking-tight */
+}
+/* Main content area */
+.app-main {
+  width: 100%;
+  max-width: 1200px; /* Equivalent to container mx-auto */
+  padding-left: 16px; /* px-4 */
+  padding-right: 16px; /* px-4 */
+}
+/* Message Box (for errors/success) */
+.message-box {
+  background-color: #fee2e2; /* Red 100 */
+  border: 1px solid #ef4444; /* Red 400 */
+  color: #b91c1c; /* Red 700 */
+  padding: 12px 16px;
+  border-radius: 8px;
+  position: relative;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.message-box strong {
+  font-weight: bold;
+}
+.message-box span {
+  margin-left: 8px;
+  display: block; /* For small screens */
+}
+@media (min-width: 640px) {
+  /* sm breakpoint */
+  .message-box span {
+    display: inline;
+  }
+}
+.message-box.success {
+  background-color: #d1fae5; /* Green 100 */
+  border-color: #34d399; /* Green 400 */
+  color: #065f46; /* Green 700 */
+}
+.message-box.error {
+  background-color: #fee2e2; /* Red 100 */
+  border-color: #ef4444; /* Red 400 */
+  color: #b91c1c; /* Red 700 */
+}
+/* Loading Indicator */
+.loading-indicator {
+  text-align: center;
+  color: #4f46e5; /* Indigo 700 */
+  font-size: 1.25rem; /* xl */
+  font-weight: 600; /* Semibold */
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+/* Footer styles */
+.app-footer {
+  width: 100%;
+  background-color: #1f2937; /* Gray 800 */
+  color: white;
+  padding: 16px 0;
+  margin-top: auto; /* Pushes footer to the bottom */
+  text-align: center;
+}
